@@ -1,0 +1,179 @@
+/* Pramaan — minimal civic-tech styling. Clean, official-looking. */
+
+/* Reset some streamlit defaults */
+.stApp {
+    background: #fafbfc;
+}
+
+/* Header */
+.pramaan-header {
+    background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+    color: white;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+.pramaan-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.pramaan-header p {
+    margin: 0.5rem 0 0 0;
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+.pr-header h1 {
+    margin: 0 0 0.5rem 0;
+    color: #1a365d;
+    font-size: 2rem;
+}
+.pr-header p {
+    color: #4a5568;
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Verdict banner */
+.verdict-banner {
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    text-align: center;
+    border-left: 6px solid;
+}
+.verdict-banner .verdict-label {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.verdict-banner .verdict-conf {
+    font-size: 0.9rem;
+    opacity: 0.85;
+    margin-top: 0.3rem;
+}
+.verdict-supported {
+    background: #f0fff4;
+    color: #22543d;
+    border-left-color: #38a169;
+}
+.verdict-contradicted {
+    background: #fff5f5;
+    color: #742a2a;
+    border-left-color: #e53e3e;
+}
+.verdict-insufficient {
+    background: #fffff0;
+    color: #744210;
+    border-left-color: #d69e2e;
+}
+
+/* Citation cards */
+.citation-card {
+    background: white;
+    padding: 1rem 1.25rem;
+    border-radius: 6px;
+    border-left: 3px solid #2c5282;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+.citation-source {
+    color: #2c5282;
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.citation-title {
+    color: #1a202c;
+    font-weight: 600;
+    margin: 0.25rem 0;
+}
+.citation-snippet {
+    color: #4a5568;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0.5rem 0;
+}
+.citation-url {
+    color: #2b6cb0;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 0.85rem;
+    word-break: break-all;
+}
+.citation-url:hover { text-decoration: underline; }
+.citation-ts {
+    color: #718096;
+    font-size: 0.75rem;
+    margin-top: 0.3rem;
+}
+
+/* Risk signals */
+.signal-card {
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    border-left: 3px solid;
+}
+.signal-sev {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+    margin-right: 0.5rem;
+}
+.signal-sev-high { background: #e53e3e; }
+.signal-sev-medium { background: #d69e2e; }
+.signal-sev-low { background: #718096; }
+.signal-name { font-weight: 600; color: #1a202c; }
+.signal-detail { color: #4a5568; font-size: 0.9rem; margin-top: 0.3rem; }
+.signal-high { background: #fff5f5; border-left-color: #e53e3e; }
+.signal-medium { background: #fffff0; border-left-color: #d69e2e; }
+.signal-low { background: #f7fafc; border-left-color: #718096; }
+
+/* Audit trail */
+.audit-step {
+    display: grid;
+    grid-template-columns: 30px 180px 1fr 90px;
+    gap: 8px;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.85rem;
+    align-items: start;
+}
+.audit-num {
+    background: #2c5282;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.1rem 0;
+}
+.audit-step-name {
+    font-family: monospace;
+    color: #2c5282;
+    font-weight: 600;
+}
+.audit-detail { color: #4a5568; word-break: break-word; }
+.audit-ts { color: #718096; font-size: 0.75rem; text-align: right; }
+
+/* Buttons */
+.stButton > button {
+    background: #2c5282;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+}
+.stButton > button:hover {
+    background: #1a365d;
+    color: white;
+}
+.stButton > button:disabled {
+    background: #cbd5e0;
+    color: #a0aec0;
+}

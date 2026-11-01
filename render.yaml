@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: pramaan-backend
+    runtime: python
+    plan: free
+    region: singapore
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: ENDPOINT_TIMEOUT_SEC
+        value: "600"
+    healthCheckPath: /health
+    autoDeploy: true

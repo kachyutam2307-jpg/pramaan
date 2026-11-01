@@ -1,0 +1,17 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+.pytest_cache/
+.env
+.env.local
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+.streamlit/secrets.toml
+*.log

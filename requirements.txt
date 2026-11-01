@@ -1,0 +1,33 @@
+# Pramaan — pinned versions, all free-tier friendly
+# Python 3.11 recommended
+
+# --- Web framework ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+python-multipart==0.0.20
+streamlit==1.41.1
+httpx==0.28.1
+selectolax==0.3.27
+beautifulsoup4==4.12.3
+
+# --- LLM (Gemini 1.5 Flash free tier) ---
+google-generativeai==0.8.4
+
+# --- Embeddings + vector index (all local, free) ---
+sentence-transformers==3.3.1
+faiss-cpu==1.9.0.post1
+torch==2.5.1  # CPU build, smaller than CUDA
+
+# --- ASR + TTS (local, free) ---
+faster-whisper==1.1.0
+edge-tts==7.0.0
+
+# --- Document / image parsing ---
+pdfplumber==0.11.4
+pypdf==5.1.0
+Pillow==11.0.0
+
+# --- Utility ---
+python-dotenv==1.0.1
+tenacity==9.0.0
